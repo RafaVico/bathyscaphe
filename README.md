@@ -10,4 +10,4 @@ You can get Exp Library source code from here: https://github.com/RafaVico/exp_l
 
 # Needed libraries
 
-SDL, SDL_Image, SDL_mixer, SDL_ttf, freetype, zlib. And of cource, EXP.
+SDL, SDL_Image, SDL_mixer, SDL_ttf, freetype, zlib. And of course, EXP.
