@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="bathyscaphe" />
+		<Option pch_mode="0" />
+		<Option compiler="wiz" />
+		<Build>
+			<Target title="WIZ">
+				<Option output="batiscafo.gpe" prefix_auto="0" extension_auto="0" />
+				<Option object_output=".objs/wiz" />
+				<Option type="1" />
+				<Option compiler="wiz" />
+				<Option use_console_runner="0" />
+				<Option projectResourceIncludeDirsRelation="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-O1" />
+					<Add option="-O" />
+					<Add option="-DPLATFORM_GP2X" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lSDL_mixer -lSDL_ttf -lfreetype -lsmpeg -lvorbisidec -lz -lSDL -lpthread -lexp_core -lexp_sdl" />
+				</Linker>
+			</Target>
+			<Target title="WIN">
+				<Option output="batiscafo.exe" prefix_auto="0" extension_auto="0" />
+				<Option object_output=".objs/win" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-O1" />
+					<Add option="-O" />
+					<Add option="-DPLATFORM_WIN" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lSDLmain -lmingw32 -lSDL -lSDL_ttf -lSDL_mixer -lfreetype -lexp_core -lexp_sdl" />
+				</Linker>
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="WIZ;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add option="-O2" />
+			<Add option="-O1" />
+			<Add option="-O" />
+		</Compiler>
+		<Linker>
+			<Add option="-s" />
+		</Linker>
+		<Unit filename="inc/language.h" />
+		<Unit filename="src/language.cpp" />
+		<Unit filename="src/main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
